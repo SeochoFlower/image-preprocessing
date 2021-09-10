@@ -13,4 +13,4 @@ for i in os.listdir(path):
   val = 100
   array = np.full(img.shape, (val,val,val),dtype=np.uint8)
   sub = cv2.subtract(img,array)
-  cv2.imwrite(path+"/d_"+str(i)+'.png', sub)
+  cv2.imwrite(path+"/d_"+str(i), sub)
